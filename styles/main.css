@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --mainTextColor-light:#000;
-  --secondaryTextColor-light:rgb(51 51 51);
-  --mainLinkColor-light:#0da2b8;
-  --mainBorderColor-light:rgb(218, 218, 218);
-  --mainBgColor-light:rgb(249, 250,251);
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
 
-  --mainTextColor-dark:#fff;
-  --secondaryTextColor-dark:#adb0b1;
-  --mainLinkColor-dark:rgb(30, 190,214);
-  --mainBorderColor-dark:#2b3031;
-  --mainBgColor-dark:#131415;
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
 
-  --mainTextColor:var(--mainTextColor-dark);
-  --secondaryTextColor:var(--secondaryTextColor-dark);
-  --mainLinkColor:var(--mainLinkColor-dark);
-  --mainBorderColor:var(--mainBorderColor-dark);
-  --mainBgColor:var(--mainBgColor-dark);
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
 }
 
 * {
@@ -31,7 +31,9 @@ body {
   background-color: var(--mainBgColor);
 }
 
-p, span, li {
+p,
+span,
+li {
   color: var(--secondaryTextColor);
   font-size: 1em;
 }
@@ -68,7 +70,8 @@ li {
   line-height: 1em;
 }
 
-#bio, a {
+#bio,
+a {
   font-weight: 300;
 }
 
@@ -76,7 +79,8 @@ li {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  object-fit: cover; /* focuses on center of the image */
+  object-fit: cover;
+  /* focuses on center of the image */
 }
 
 #email {
@@ -135,8 +139,49 @@ li {
   border-top: 1px solid var(--mainBorderColor);
 }
 
+.card--contact {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid var(--mainBorderColor);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.form-control {
+  font-size: 12px;
+  background-color: #f5f5f5;
+  color: var(--mainBgColor) !important;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+#submit-btn {
+  background-color: var(--mainTextColor);
+  color: var(--mainBgColor);
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 4px;
+  padding: 5px 0;
+  width: 20%;
+  align-self: center;
+}
+
 @media(max-width:600px) {
-  
+
   #wrapper--hero {
     flex-direction: column;
     gap: 1em;

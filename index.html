@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shailesh Bhimanpelli</title>
   <link rel="stylesheet" href="./styles/main.css" type="text/css" media="screen">
+
 </head>
 
 <body>
@@ -65,18 +66,72 @@
 
     <section class="section--page">
       <h2>Personal Projects</h2>
-  
+
       <div class="card--project">
         <ul id="projects--list">
           <li>Built a Library management system using Go, Angular, Docker</li>
           <li>Built Task list android app using Flutter</li>
         </ul>
       </div>
-  
-  </section>
+
+    </section>
+
+    <section class="section--page">
+      <h2>Get In Touch</h2>
+
+      <div class="line-break"></div>
+      <div class="card--contact">
+        <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" id="useremail" placeholder="Enter your email"
+              required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="number" name="contact" id="contact" placeholder="Contact number">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" id="message" rows="4"
+              placeholder="How can I help you?"></textarea>
+          </div>
+
+          <button type="submit" id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
 
   </div>
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+
+    var visitCount = 0
+
+    function start() {
+      visitCount += 1
+      console.log(visitCount);
+    }
+
+    start()
+
+    function sendEmail() {
+      var messageBody = `Email: ` + document.getElementById("useremail").value +
+      ` <br />Contact number: ` + document.getElementById("contact").value +
+      ` <br /> Message: ` + document.getElementById("message").value         
+
+      Email.send({
+        SecureToken: "23433945-23a7-441a-97c5-73caaf4e7873",
+        To: 'shaileshb.0720@gmail.com',
+        From: "swabhavtest@gmail.com",
+        Subject: "Contacted by " + document.getElementById("name").value,
+        Body: messageBody,
+      }).then(
+        message => alert("Message sent successfully")
+      );
+    }
+  </script>
 </body>
 
 </html>
