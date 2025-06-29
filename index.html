@@ -5,395 +5,146 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shailesh Bhimanpelli - Full Stack Developer</title>
+  <title>Shailesh Bhimanpelli</title>
   <link rel="stylesheet" href="./styles/main.css" type="text/css" media="screen">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <div class="nav-brand">Shailesh Bhimanpelli</div>
-      <div class="nav-links">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-      <div class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav-brand">Shailesh Bhimanpelli</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#writing">Writing</a>
+        </div>
+      </nav>
+    </header>
 
-  <div id="container--main">
-    <!-- Hero Section -->
-    <section id="wrapper--hero" class="section--page hero-section">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="hero-greeting">
-            <span class="wave">👋</span>
-            <span>Hello, I'm</span>
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Shailesh Bhimanpelli</h1>
+        <p class="hero-description">
+          I'm a full stack developer with 4+ years of experience building web applications. 
+          I work with Go, Node.js, and modern frontend frameworks.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:shaileshhb.0720@gmail.com" class="link">Email</a>
+          <a href="https://www.linkedin.com/in/shailesh-bhimanpelli" target="_blank" class="link">LinkedIn</a>
+          <a href="https://github.com/shaileshhb" target="_blank" class="link">GitHub</a>
+          <a href="./assets/Shailesh_Bhimanpelli_Resume.pdf" target="_blank" class="link">Resume</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <div class="content">
+          <p>
+            I'm a self-taught full stack developer passionate about building efficient and scalable web applications. 
+            I enjoy working with modern technologies and solving complex problems.
+          </p>
+          <p>
+            Currently working at Madison Logic as a Senior Software Engineer, where I focus on automation 
+            and improving developer workflows using Go and modern web technologies.
+          </p>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section id="work" class="section">
+        <h2>Work</h2>
+        <div class="content">
+          <div class="work-item">
+            <div class="work-header">
+              <h3>Madison Logic</h3>
+              <span class="work-period">2025</span>
+            </div>
+            <p class="work-title">Senior Software Engineer</p>
+            <p class="work-description">
+              Built POC to automate campaign setup using GenAI, reducing manual work from 2-3 days to 5 minutes. 
+              Worked on CI pipelines using Dagger and Go.
+            </p>
           </div>
-          <h1 id="user-name">Shailesh Bhimanpelli</h1>
-          <h2 class="hero-title">Full Stack Developer</h2>
-          <p id="bio">Self-taught full stack developer with 4+ years of experience. Quick learner and passionate about learning new technologies. Active problem solver with diverse soft and hard skills.</p>
-          <div class="hero-contact">
-            <i class="fas fa-envelope"></i>
-            <span id="email">shaileshhb.0720@gmail.com</span>
-          </div>
-          <div class="hero-actions">
-            <a href="./assets/Shailesh_Bhimanpelli_Resume.pdf" target="_blank" class="btn btn-primary">
-              <i class="fas fa-download"></i>
-              Download Resume
-            </a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+
+          <div class="work-item">
+            <div class="work-header">
+              <h3>Swabhav VentureLabs</h3>
+              <span class="work-period">2020 - 2024</span>
+            </div>
+            <p class="work-title">Software Engineer & Team Lead</p>
+            <p class="work-description">
+              Led development of mentoring and assessment platforms. Built proctoring system, 
+              improved talent tracking, and managed large data processing workflows.
+            </p>
           </div>
         </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img src="./assets/images/profile.png" id="profile-pic" alt="Shailesh Bhimanpelli" />
-            <div class="image-backdrop"></div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="content">
+          <div class="project-item">
+            <div class="project-header">
+              <h3>Unbeatable Tic-Tac-Toe Bot</h3>
+              <a href="https://github.com/shaileshhb/tic-tac-toe-bot" target="_blank" class="link">GitHub</a>
+            </div>
+            <p class="project-description">
+              A command-line Tic-Tac-Toe game in Go featuring an unbeatable bot using the Minimax algorithm. 
+              The algorithm ensures the player can never win—only draw or lose.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Social Links -->
-    <section class="section--page social-section">
-      <div id="socials--list">
-        <a href="https://www.linkedin.com/in/shailesh-bhimanpelli" target="_blank" class="social-link">
-          <i class="fab fa-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/shaileshhb" target="_blank" class="social-link">
-          <i class="fab fa-github"></i>
-          <span>Github</span>
-        </a>
-        <a href="https://medium.com/@shaileshb.0720" target="_blank" class="social-link">
-          <i class="fab fa-medium"></i>
-          <span>Blogs</span>
-        </a>
-        <a href="https://twitter.com/shaileshb_" target="_blank" class="social-link">
-          <i class="fab fa-twitter"></i>
-          <span>Twitter</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section--page" id="about">
-      <div class="section-header">
-        <h2>About Me</h2>
-        <div class="section-divider"></div>
-      </div>
-      
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="card-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3>Skills & Qualifications</h3>
-          <ul id="qualifications--list">
-            <li><i class="fas fa-check-circle"></i> 4+ Years experience in web development</li>
-            <li><i class="fas fa-check-circle"></i> Strong Golang and NodeJS expertise</li>
-            <li><i class="fas fa-check-circle"></i> System design and architecture experience</li>
-            <li><i class="fas fa-check-circle"></i> Proficiency in MySQL and PostgreSQL</li>
-            <li><i class="fas fa-check-circle"></i> Experience with Docker and Kubernetes</li>
-          </ul>
-        </div>
-
-        <div class="about-card">
-          <div class="card-icon">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3>Tech Stack</h3>
-          <div id="wrapper--techstack__items">
-            <div class="card--techstack">
-              <i class="fab fa-golang"></i>
-              <span>Go, Gorilla mux, Go Fiber</span>
-            </div>
-            <div class="card--techstack">
-              <i class="fab fa-node-js"></i>
-              <span>NodeJS, Express, Papaparse</span>
-            </div>
-            <div class="card--techstack">
-              <i class="fab fa-react"></i>
-              <span>NextJS, ReactJS, Angular</span>
-            </div>
-            <div class="card--techstack">
-              <i class="fas fa-database"></i>
-              <span>MySQL, PostgreSQL</span>
-            </div>
-            <div class="card--techstack">
-              <i class="fab fa-docker"></i>
-              <span>Docker, Kubernetes</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section--page" id="experience">
-      <div class="section-header">
-        <h2>Work Experience</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="card--work-history modern-card">
-              <div class="work-header">
-                <h3>Senior Software Engineer</h3>
-                <div class="company-info">
-                  <span class="company">Madison Logic</span>
-                  <span class="duration">01/2025 - 05/2025</span>
-                </div>
-              </div>
-              <div class="work-description">
-                <p>Worked on POC to automate the initial setup of campaigns that manually took about 2-3 days, reduced it to 5mins using GenAI</p>
-                <p>Worked on Dagger to write CI pipelines using Golang so that pipeline issues can be tested and fixed in local system</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Golang</span>
-                  <span class="tech-tag">NodeJS</span>
-                  <span class="tech-tag">Langchain</span>
-                  <span class="tech-tag">Docker</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="card--work-history modern-card">
-              <div class="work-header">
-                <h3>Software Engineer</h3>
-                <div class="company-info">
-                  <span class="company">Swabhav VentureLabs</span>
-                  <span class="duration">11/2020 - Present</span>
-                </div>
-              </div>
-              <div class="work-description">
-                <p>Improved mentoring by introducing interactive sessions and modules, making learning more engaging. Also supported faculty in providing specific feedback, which led to better matches for recruitment and placements.</p>
-                <p>Implemented session planning, allowing faculty to provide targeted guidance to students based on their assignments and performance scores. Additionally, enhanced the efficiency of talent tracking.</p>
-                <p>Developed a proctoring system internally, cutting costs by avoiding the need for external help. This also improved the accuracy of assessments and empowered our in-house team to create more customized tests.</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Golang</span>
-                  <span class="tech-tag">Angular</span>
-                  <span class="tech-tag">Docker</span>
-                  <span class="tech-tag">Kubernetes</span>
-                  <span class="tech-tag">MySQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="card--work-history modern-card">
-              <div class="work-header">
-                <h3>Team Lead</h3>
-                <div class="company-info">
-                  <span class="company">Swabhav VentureLabs</span>
-                  <span class="duration">10/2022 - 10/2023</span>
-                </div>
-              </div>
-              <div class="work-description">
-                <p>Led a team in the development of both the SAM and Clone Your Customer modules, instrumental in accurate market assessment and customer acquisition strategies.</p>
-                <p>Effectively addressed the task of managing large data uploads by using smart stream-based methods</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">NodeJS</span>
-                  <span class="tech-tag">NextJS</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section--page" id="projects">
-      <div class="section-header">
-        <h2>Featured Projects</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Unbeatable Tic-Tac-Toe Bot</h3>
-            <a href="https://github.com/shaileshhb/tic-tac-toe-bot" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
+      <!-- Writing Section -->
+      <section id="writing" class="section">
+        <h2>Writing</h2>
+        <div class="content">
+          <div class="writing-item">
+            <a href="https://medium.com/@shaileshb.0720/node-js-readstream-and-writestream-explained-a-beginners-journey-6b76ffcd804b" target="_blank" class="writing-link">
+              <span class="writing-title">NodeJS ReadStream and WriteStream</span>
+              <span class="writing-description">A beginner's journey into understanding Node.js streams for efficient data processing.</span>
             </a>
           </div>
-          <p>A command-line Tic-Tac-Toe game in Go featuring an unbeatable BOT using the Minimax algorithm, ensuring the player can never win—only draw or lose.</p>
-          <p>The algorithm evaluates all possible moves by simulating every potential game outcome, choosing the one that maximizes its chances of winning while minimizing the player's chances.</p>
-          <div class="tech-tags">
-            <span class="tech-tag">Golang</span>
-            <span class="tech-tag">Minimax Algorithm</span>
+
+          <div class="writing-item">
+            <a href="https://medium.com/@shaileshb.0720/effortless-csv-parsing-in-golang-a-hands-on-approach-2dbaa77ec654" target="_blank" class="writing-link">
+              <span class="writing-title">CSV Parsing in Golang</span>
+              <span class="writing-description">Effortless CSV parsing in Golang with a hands-on approach to data manipulation.</span>
+            </a>
+          </div>
+
+          <div class="writing-item">
+            <a href="https://medium.com/@shaileshb.0720/logging-with-logrus-streamlining-mongodb-integration-541b3d7a91d9" target="_blank" class="writing-link">
+              <span class="writing-title">Logging with Logrus</span>
+              <span class="writing-description">Streamlining MongoDB integration with structured logging using Logrus.</span>
+            </a>
+          </div>
+
+          <div class="writing-all">
+            <a href="https://medium.com/@shaileshb.0720" target="_blank" class="link">View all posts →</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Blog Section -->
-    <section class="section--page">
-      <div class="section-header">
-        <h2>Latest Blog Posts</h2>
-        <div class="section-divider"></div>
-        <a href="https://medium.com/@shaileshb.0720" target="_blank" class="view-all-link">
-          View All Posts <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <div class="blog-grid">
-        <div class="blog-card">
-          <div class="blog-icon">
-            <i class="fab fa-node-js"></i>
-          </div>
-          <h3>NodeJS ReadStream and WriteStream</h3>
-          <p>A beginner's journey into understanding Node.js streams for efficient data processing.</p>
-          <a href="https://medium.com/@shaileshb.0720/node-js-readstream-and-writestream-explained-a-beginners-journey-6b76ffcd804b" target="_blank" class="blog-link">
-            Read More <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-icon">
-            <i class="fab fa-golang"></i>
-          </div>
-          <h3>CSV Parsing in Golang</h3>
-          <p>Effortless CSV parsing in Golang with a hands-on approach to data manipulation.</p>
-          <a href="https://medium.com/@shaileshb.0720/effortless-csv-parsing-in-golang-a-hands-on-approach-2dbaa77ec654" target="_blank" class="blog-link">
-            Read More <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <h3>Logging with Logrus</h3>
-          <p>Streamlining MongoDB integration with structured logging using Logrus.</p>
-          <a href="https://medium.com/@shaileshb.0720/logging-with-logrus-streamlining-mongodb-integration-541b3d7a91d9" target="_blank" class="blog-link">
-            Read More <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section--page" id="contact">
-      <div class="section-header">
-        <h2>Get In Touch</h2>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">Have a project in mind? Let's work together to bring your ideas to life.</p>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Email</h4>
-              <p>shaileshhb.0720@gmail.com</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Location</h4>
-              <p>Available for remote work</p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Response Time</h4>
-              <p>Within 24 hours</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-container">
-          <form id="contact-form" class="contact-form" onsubmit="sendEmail(); reset(); return false;">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name *</label>
-                <input class="form-control" type="text" name="name" id="name" placeholder="Your full name" required>
-              </div>
-              <div class="form-group">
-                <label for="useremail">Email *</label>
-                <input class="form-control" type="email" name="email" id="useremail" placeholder="your.email@example.com" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="contact">Phone Number</label>
-              <input class="form-control" type="tel" name="contact" id="contact" placeholder="Your phone number (optional)">
-            </div>
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea class="form-control" name="message" id="message" rows="5" placeholder="Tell me about your project or how I can help you..." required></textarea>
-            </div>
-
-            <button type="submit" id="submit-btn" class="btn btn-primary">
-              <span class="btn-text">Send Message</span>
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Shailesh Bhimanpelli</p>
+    </footer>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Shailesh Bhimanpelli. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      navToggle.classList.toggle('active');
-    });
-
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -404,86 +155,8 @@
             behavior: 'smooth',
             block: 'start'
           });
-          // Close mobile menu if open
-          navLinks.classList.remove('active');
-          navToggle.classList.remove('active');
         }
       });
-    });
-
-    // Form submission
-    function sendEmail() {
-      const submitBtn = document.getElementById('submit-btn');
-      const btnText = submitBtn.querySelector('.btn-text');
-      const btnIcon = submitBtn.querySelector('i');
-      
-      // Show loading state
-      btnText.textContent = 'Sending...';
-      btnIcon.className = 'fas fa-spinner fa-spin';
-      submitBtn.disabled = true;
-
-      var messageBody = `Email: ` + document.getElementById("useremail").value +
-        ` <br />Contact number: ` + document.getElementById("contact").value +
-        ` <br /> Message: ` + document.getElementById("message").value
-
-      Email.send({
-        SecureToken: "23433945-23a7-441a-97c5-73caaf4e7873",
-        To: 'shaileshhb.0720@gmail.com',
-        From: "swabhavtest@gmail.com",
-        Subject: "Portfolio Contact: " + document.getElementById("name").value,
-        Body: messageBody,
-      }).then(
-        message => {
-          // Reset button state
-          btnText.textContent = 'Message Sent!';
-          btnIcon.className = 'fas fa-check';
-          
-          // Show success message
-          alert("Thank you for your message! I'll get back to you soon.");
-          
-          // Reset form and button after delay
-          setTimeout(() => {
-            btnText.textContent = 'Send Message';
-            btnIcon.className = 'fas fa-paper-plane';
-            submitBtn.disabled = false;
-          }, 2000);
-        }
-      ).catch(error => {
-        // Reset button state on error
-        btnText.textContent = 'Send Message';
-        btnIcon.className = 'fas fa-paper-plane';
-        submitBtn.disabled = false;
-        alert("Sorry, there was an error sending your message. Please try again.");
-      });
-    }
-
-    // Add scroll effect to navigation
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.nav');
-      if (window.scrollY > 100) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    });
-
-    // Animate elements on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-        }
-      });
-    }, observerOptions);
-
-    // Observe all sections and cards
-    document.querySelectorAll('.section--page, .modern-card, .project-card, .blog-card').forEach(el => {
-      observer.observe(el);
     });
   </script>
 </body>
