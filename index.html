@@ -22,11 +22,11 @@
           <div class="nav-links">
             <a href="#about">About</a>
             <a href="#work">Work</a>
-            <a href="#projects">Projects<a/a>
+            <a href="#projects">Projects</a>
             <a href="#writing">Writing</a>
           </div>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
+            <span class="theme-icon">☀️</span>
           </button>
         </div>
       </nav>
@@ -36,28 +36,35 @@
     <main class="main">
       <!-- Hero Section -->
       <section class="hero">
-        <h1>Shailesh Bhimanpelli</h1>
-        <p class="hero-description">
-          I'm a full stack developer with 4+ years of experience building web applications. 
-          I work with Go, Node.js, and modern frontend frameworks.
-        </p>
-        <div class="hero-links">
-          <a href="mailto:shaileshhb.0720@gmail.com" class="social-link">
-            <span class="social-icon">✉️</span>
-            <span>Email</span>
-          </a>
-          <a href="https://www.linkedin.com/in/shailesh-bhimanpelli" target="_blank" class="social-link">
-            <span class="social-icon">💼</span>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/shaileshhb" target="_blank" class="social-link">
-            <span class="social-icon">🔗</span>
-            <span>GitHub</span>
-          </a>
-          <a href="./assets/Shailesh_Bhimanpelli_Resume.pdf" target="_blank" class="social-link">
-            <span class="social-icon">📄</span>
-            <span>Resume</span>
-          </a>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Shailesh Bhimanpelli</h1>
+            <p class="hero-description">
+              I'm a full stack developer with 4+ years of experience building web applications. 
+              I work with Go, Node.js, and modern frontend frameworks.
+            </p>
+            <div class="hero-links">
+              <a href="mailto:shaileshhb.0720@gmail.com" class="social-link">
+                <span class="social-icon">✉️</span>
+                <span>Email</span>
+              </a>
+              <a href="https://www.linkedin.com/in/shailesh-bhimanpelli" target="_blank" class="social-link">
+                <span class="social-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/shaileshhb" target="_blank" class="social-link">
+                <span class="social-icon">🔗</span>
+                <span>GitHub</span>
+              </a>
+              <a href="./assets/Shailesh_Bhimanpelli_Resume.pdf" target="_blank" class="social-link">
+                <span class="social-icon">📄</span>
+                <span>Resume</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="./assets/images/profile.png" alt="Shailesh Bhimanpelli" class="profile-pic">
+          </div>
         </div>
       </section>
 
@@ -176,8 +183,8 @@
     const themeIcon = themeToggle.querySelector('.theme-icon');
     const body = document.body;
 
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Check for saved theme preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     body.setAttribute('data-theme', currentTheme);
     updateThemeIcon(currentTheme);
 
