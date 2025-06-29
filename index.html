@@ -18,11 +18,16 @@
     <header class="header">
       <nav class="nav">
         <a href="#" class="nav-brand">Shailesh Bhimanpelli</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#projects">Projects</a>
-          <a href="#writing">Writing</a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#projects">Projects</a>
+            <a href="#writing">Writing</a>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
         </div>
       </nav>
     </header>
@@ -37,10 +42,22 @@
           I work with Go, Node.js, and modern frontend frameworks.
         </p>
         <div class="hero-links">
-          <a href="mailto:shaileshhb.0720@gmail.com" class="link">Email</a>
-          <a href="https://www.linkedin.com/in/shailesh-bhimanpelli" target="_blank" class="link">LinkedIn</a>
-          <a href="https://github.com/shaileshhb" target="_blank" class="link">GitHub</a>
-          <a href="./assets/Shailesh_Bhimanpelli_Resume.pdf" target="_blank" class="link">Resume</a>
+          <a href="mailto:shaileshhb.0720@gmail.com" class="social-link">
+            <span class="social-icon">✉️</span>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/shailesh-bhimanpelli" target="_blank" class="social-link">
+            <span class="social-icon">💼</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/shaileshhb" target="_blank" class="social-link">
+            <span class="social-icon">🔗</span>
+            <span>GitHub</span>
+          </a>
+          <a href="./assets/Shailesh_Bhimanpelli_Resume.pdf" target="_blank" class="social-link">
+            <span class="social-icon">📄</span>
+            <span>Resume</span>
+          </a>
         </div>
       </section>
 
@@ -96,7 +113,10 @@
           <div class="project-item">
             <div class="project-header">
               <h3>Unbeatable Tic-Tac-Toe Bot</h3>
-              <a href="https://github.com/shaileshhb/tic-tac-toe-bot" target="_blank" class="link">GitHub</a>
+              <a href="https://github.com/shaileshhb/tic-tac-toe-bot" target="_blank" class="project-link">
+                <span class="link-icon">↗</span>
+                <span>GitHub</span>
+              </a>
             </div>
             <p class="project-description">
               A command-line Tic-Tac-Toe game in Go featuring an unbeatable bot using the Minimax algorithm. 
@@ -114,6 +134,7 @@
             <a href="https://medium.com/@shaileshb.0720/node-js-readstream-and-writestream-explained-a-beginners-journey-6b76ffcd804b" target="_blank" class="writing-link">
               <span class="writing-title">NodeJS ReadStream and WriteStream</span>
               <span class="writing-description">A beginner's journey into understanding Node.js streams for efficient data processing.</span>
+              <span class="link-arrow">→</span>
             </a>
           </div>
 
@@ -121,6 +142,7 @@
             <a href="https://medium.com/@shaileshb.0720/effortless-csv-parsing-in-golang-a-hands-on-approach-2dbaa77ec654" target="_blank" class="writing-link">
               <span class="writing-title">CSV Parsing in Golang</span>
               <span class="writing-description">Effortless CSV parsing in Golang with a hands-on approach to data manipulation.</span>
+              <span class="link-arrow">→</span>
             </a>
           </div>
 
@@ -128,11 +150,15 @@
             <a href="https://medium.com/@shaileshb.0720/logging-with-logrus-streamlining-mongodb-integration-541b3d7a91d9" target="_blank" class="writing-link">
               <span class="writing-title">Logging with Logrus</span>
               <span class="writing-description">Streamlining MongoDB integration with structured logging using Logrus.</span>
+              <span class="link-arrow">→</span>
             </a>
           </div>
 
           <div class="writing-all">
-            <a href="https://medium.com/@shaileshb.0720" target="_blank" class="link">View all posts →</a>
+            <a href="https://medium.com/@shaileshb.0720" target="_blank" class="view-all-link">
+              <span>View all posts</span>
+              <span class="link-arrow">→</span>
+            </a>
           </div>
         </div>
       </section>
@@ -145,6 +171,29 @@
   </div>
 
   <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+    const body = document.body;
+
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
